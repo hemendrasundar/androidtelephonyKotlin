@@ -80,6 +80,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
         alertDialog.setTitle("Pick a file")
         alertDialog.setPositiveButton("camera",object : DialogInterface.OnClickListener{
             override fun onClick(p0: DialogInterface?, p1: Int) {
+
                var i = Intent("android.media.action.IMAGE_CAPTURE")
                 startActivityForResult(i,123)
             }
@@ -109,18 +110,13 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
         startActivity(i)
     }
 
-    fun javamail()
-    {
-
-    }
-
     fun init()
     {
         btn_call.setOnClickListener(this)
         btn_sms.setOnClickListener(this)
         btn_attachments.setOnClickListener(this)
         btn_email.setOnClickListener(this)
-        btn_javamail.setOnClickListener(this)
+
     }
 
     fun requestpermissions()
@@ -204,9 +200,7 @@ class MainActivity : AppCompatActivity(),View.OnClickListener {
             R.id.btn_attachments ->{
                 addAttachments()
             }
-            R.id.btn_javamail ->{
-                javamail()
-            }
+
 
         }
 

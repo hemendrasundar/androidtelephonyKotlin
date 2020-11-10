@@ -96,13 +96,7 @@
             android:layout_height="wrap_content"
             android:text="EMAIL"
             android:layout_margin="10dp"/>
-        <Button
-            android:layout_weight="0.5"
-            android:id="@+id/btn_javamail"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="JAVA MAIL"
-            android:layout_margin="10dp"/>
+
 
     </LinearLayout>
 
